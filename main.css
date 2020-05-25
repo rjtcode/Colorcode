@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+
+body, html {
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 580px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-size: 44px;
+}
+
+.hex-value {
+    height: 50px;
+    margin-top: 0;
+}
+
+.btn {
+    margin: 3px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0.8;
+    box-shadow: 3px 3px 5px rgba(117, 117, 117, 0.541);
+    transition: .1s;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    box-shadow: 3px 3px 10px rgba(117, 117, 117, 0.329);
+}
+
+.saved-colors-container {
+    width: 690px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+    transition: 1s;
+}
+
+.color-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 140px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgba(41, 41, 41, 0.459);
+    transition: .1s;
+}
+
+.color-box:hover {
+        box-shadow: 5px 5px 10px rgba(41, 41, 41, 0.459);
+        transform: scale(1.02);
+}
+
+.color-box span {
+    align-self: flex-start;
+    pointer-events: none;
+}
